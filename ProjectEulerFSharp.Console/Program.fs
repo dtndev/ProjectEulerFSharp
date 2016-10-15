@@ -15,6 +15,11 @@ let main argv =
             let number =  Int32.Parse(Console.ReadLine())
             let sum = Problem1.SumOfMultiplesOfThreeAndFiveBelow number
             "Sum is " + sum.ToString() |> Console.WriteLine 
+        | 2 -> 
+            printfn "Calculate sum of even fibonacci numbers not exceeding..."
+            let number =  Int32.Parse(Console.ReadLine())
+            let sum = Problem2.SumOfEvenFibonacciNumbersLessThanOrEqualTo number
+            "Sum is " + sum.ToString() |> Console.WriteLine 
         | _ -> 
             printfn "Problem number %i not supported" problemNumber 
        
